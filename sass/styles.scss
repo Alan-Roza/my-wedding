@@ -1023,7 +1023,7 @@ Timeline
       box-sizing: inherit;
   }
   &:not(.timeline--horizontal)::before {
-      background-color: #DDD;
+      background-color: #8f34cc8c;
       bottom: 0;
       content: '';
       left: 50%;
@@ -1045,19 +1045,20 @@ z-index: 2;
 font-size: 3rem;
 padding: 10px 40px 10px 0;
 position: relative;
-width: 50%;
+width: 40%;
+justify-content: center;
   z-index: 2;
   &::after {
-      background-color: #FFF;
-      border: 4px solid #DDD;
+      background-color: #8f34cc;
+      border: 4px solid #fff;
       border-radius: 50%;
       content: '';
-      height: 20px;
+      height: 30px;
       position: absolute;
-      right: -10px;
+      right: -15px;
       transform: translateY(-50%);
       top: 50%;
-      width: 20px;
+      width: 30px;
       z-index: 1;
   }
   &.animated {
@@ -1071,14 +1072,14 @@ width: 50%;
 }
 
 .timeline__item--left {
-  left: 0;
+  left: 10%;
 }
 
 .timeline__item--right {
 left: 50%;
   padding: 10px 0 10px 40px;
   &::after {
-      left: -10px;
+      left: -15px;
   }
   .timeline__content {
       &::before {
@@ -1098,47 +1099,30 @@ left: 50%;
   }
 }
 
+.timeline__card {
+  &:hover {
+    transition: 250ms;
+    box-shadow: 0 14px 25px rgb(0 0 0 / 16%);
+  }
+}
+
+.timeline__header-content {
+  background-color: #8f34cc;
+  color: #fff;
+  text-align: center;
+  font-weight: bold;
+  font-size: 24px;
+  padding: 20px 40px;
+  margin-bottom: 1px;
+}
+
 .timeline__content {
   background-color: #FFF;
-  border: 1px solid #CCC;
-  border-radius: 10px;
+  border: 3px solid #8f34cc;
   color: #333;
 display: block;
 padding: 20px;
   position: relative;
-  &::before,
-  &::after {
-      content: '';
-      height: 0;
-      position: absolute;
-      transform: translateY(-50%);
-      top: 50%;
-      width: 0;
-  }
-  &::before {
-      border-bottom: 10px solid transparent; 
-      border-left: 12px solid #CCC; 
-      border-top: 10px solid transparent;
-      right: -12px;
-      z-index: 1;
-  }
-  &::after {
-      border-bottom: 9px solid transparent; 
-      border-left: 11px solid #FFF; 
-      border-top: 9px solid transparent;
-      right: -10px;
-      z-index: 2;
-  }
-  h2 {
-      font-size: 20px;
-      font-weight: 700;
-      margin: 0 0 10px;
-  }
-  p {
-      font-size: 15px;
-      line-height: 1.5;
-      margin-bottom: 10px;
-  }
 }
 
 .timeline--horizontal {
