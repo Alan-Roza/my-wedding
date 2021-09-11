@@ -173,7 +173,6 @@ Animations
     transform: translate(-50%, 0)
   }
 }
-
 /* ==========================================================================
 Waypoinsts
 ========================================================================== */
@@ -1042,7 +1041,7 @@ z-index: 2;
 }
 
 .timeline__item {
-font-size: 3rem;
+font-size: 18px;
 padding: 10px 40px 10px 0;
 position: relative;
 width: 40%;
@@ -1120,8 +1119,8 @@ left: 50%;
   background-color: #FFF;
   border: 3px solid #8f34cc;
   color: #333;
-display: block;
-padding: 20px;
+  display: block;
+  padding: 20px;
   position: relative;
 }
 
@@ -1264,7 +1263,7 @@ width: 40px;
 .timeline--mobile {
   padding: 0;
   &::before {
-      left: 10px !important;
+      left: 15px !important;
       margin: 0 !important;
   }
   .timeline__item {
