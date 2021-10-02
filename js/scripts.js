@@ -704,10 +704,10 @@ $(document).ready(function () {
 
         $('#alert-wrapper').html(alert_markup('info', '<strong>Aguarde um instante!</strong> Nós estamos salvando as suas informações.'));
 
-        if (MD5($('#invite_code').val()) !== '592bac4e4ef9a61f4fd6f8602619f9bb') {
+        if (MD5($('#invite_code').val()) !== '664dfc780c0218b93e9726502c1bf446') {
             $('#alert-wrapper').html(alert_markup('danger', '<strong>Desculpe!</strong> O seu código do convite está inválido.'));
         } else {
-            $.post('https://script.google.com/macros/s/AKfycbyuRgDyS0C03d4ZF-j472G9brHsbSDRPgpBKVFuJxtJ4UIQSjfzAWVInVI7prkKB20Z/exec', data)
+            $.post('https://script.google.com/macros/s/AKfycby8MyUIaBtM52M9b0bMgQWceoJfp0Cuij_F7K3bjJLmU6GgZOcNr7umKGbtTwZAG28_/exec', data)
                 .done(function (data) {
                     if (data.result === "error") {
                         $('#alert-wrapper').html(alert_markup('danger', data.message));
