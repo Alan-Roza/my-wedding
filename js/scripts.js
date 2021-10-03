@@ -707,7 +707,7 @@ $(document).ready(function () {
         if (MD5($('#invite_code').val()) !== '664dfc780c0218b93e9726502c1bf446') {
             $('#alert-wrapper').html(alert_markup('danger', '<strong>Desculpe!</strong> O seu código do convite está inválido.'));
         } else {
-            $.post('https://script.google.com/macros/s/AKfycby8MyUIaBtM52M9b0bMgQWceoJfp0Cuij_F7K3bjJLmU6GgZOcNr7umKGbtTwZAG28_/exec', data)
+            $.post('https://script.google.com/macros/s/AKfycbwQeH2_mDewiziyTmn6SwpHutP1vvthxyefPYfA97RwO7a5WPuuHSLNuIBCEN18YpYH/exec', data)
                 .done(function (data) {
                     if (data.result === "error") {
                         $('#alert-wrapper').html(alert_markup('danger', data.message));
