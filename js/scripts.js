@@ -684,7 +684,7 @@ $(document).ready(function () {
 
             // You can also choose to set an end time
             // If an end time is set, this will take precedence over duration
-            end: new Date('2021-11-28T03:00:00Z'),
+            end: new Date('2021-11-29T03:00:00Z'),
 
             // Event Address
             address: 'Chácara dos Amadinhos, Araçoiaba da Serra',
